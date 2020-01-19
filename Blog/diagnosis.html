@@ -1,0 +1,74 @@
+<html>
+<head>
+<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+<title>Diagnosis</title>
+</head>
+<body style="background-color: gray; color:white;">
+    <nav class="navbar navbar-default" style="background-color:black;margin-bottom: 10px;">
+        <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="blog.html">Home</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active" ><a href="admin.html">Appointment</a></li>
+        <li ><a href="diagnosis.html">Medical Concern</a></li>
+        <li ><a href="about.html">About</a></li>
+    
+      </ul>
+    </div>
+          </div>
+       </nav>
+<div class="container">
+ 
+  <h1>Patient must try to explain what he/she is expierincing </h1>
+  </div>
+<div style="background-color: whitesmoke;color:black;width: 80%;left: 10%;position: relative;height: 40%;">
+    <br>
+  </b><h1>Please copy this five digit number, You will use it as your Referrence Number :</h1></b>
+    <h1>Click on the precription picture :</h1>
+      <br>
+    <br>
+     <b> <p id="rand" style="background:black;color:red;margin-left:30px;font-size:18px;width: 55px;;"></p></b>
+      <img onclick="document.getElementById('rand').innerHTML = (Math.random().toPrecision(5)*100000)" src="./images/download (2).jpg" style="top:80px;left: 65%;position: absolute;" class="img-thumbnail">
+    <br>
+   
+</div>
+ 
+<div class="container">
+<form>
+    
+  illness related to :<br>
+  <input type="radio" value="head" >Head
+  <br>
+  <input type="radio" value="head" checked>Abdorminal
+  <br>
+  <input type="radio" value="head">limbs
+  <br>
+  
+  <p>Please Enter More Information about Your Illness:</p> 
+  <textarea  style="width: 80%;height:50%;">
+  
+  </textarea>
+<br>
+<br>
+<br>
+
+<a href="blog.html" type="block" style="color: white;height:40px;width:60px;background-color: blue;"><b>
+Submit</b></a>
+<p id="rand"></p>
+
+<script>
+
+    
+    var a = Math.random().toPrecision(5);
+    // document.getElementById("rands").innerHTML =a * 100000;
+   </script>
+</form>
+</div>
+<!-- <script src="./bootstrap/js/bootstrap.min.js"></script> -->
+<script src="./bootstrap/js/JQuery.js"></script>
+    <script src="./bootstrap/js//popper.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
+  </html>
